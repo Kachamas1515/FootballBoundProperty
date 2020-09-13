@@ -28,9 +28,9 @@ public class MyFootballPropertyBean implements Serializable {
         return footballResult;
     }
 
-    public void setFootballResult(String value) {
+    public void setFootballResult(String footballResult) {
         String oldValue = this.footballResult;
-        this.footballResult = value;
+        this.footballResult = footballResult;
         propertySupport.firePropertyChange(FootballResult_PROPERTY, oldValue, this.footballResult);
     }
 
